@@ -57,6 +57,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        festive: {
+          red: "hsl(var(--festive-red))",
+          gold: "hsl(var(--festive-gold))",
+          cream: "hsl(var(--festive-cream))",
+          dark: "hsl(var(--festive-dark))",
+        },
+      },
+      backgroundImage: {
+        'gradient-festive': 'var(--gradient-festive)',
+        'gradient-subtle': 'var(--gradient-subtle)',
+      },
+      boxShadow: {
+        'elegant': 'var(--shadow-elegant)',
+        'card': 'var(--shadow-card)',
       },
       borderRadius: {
         lg: "var(--radius)",
