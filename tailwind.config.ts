@@ -19,10 +19,15 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
+				primary: {
+					DEFAULT: "hsl(var(--primary))",
+					foreground: "hsl(var(--primary-foreground))",
+				},
+				christmas: {
+					red: "hsl(var(--christmas-red))",
+					green: "hsl(var(--christmas-green))",
+					gold: "hsl(var(--christmas-gold))",
+				},
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -65,8 +70,9 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-festive': 'var(--gradient-festive)',
-        'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-festive': 'var(--gradient-festive)',
+				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-christmas': 'var(--gradient-christmas)',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',

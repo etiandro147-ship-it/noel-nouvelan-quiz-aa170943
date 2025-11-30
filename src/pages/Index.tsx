@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, PlayCircle } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 
 type QuizStep = "intro" | "quiz" | "video" | "testimonials" | "result";
 
@@ -191,11 +193,16 @@ const Index = () => {
               Pour faciliter votre expérience, nous avons préparé une courte vidéo expliquant de manière simple pour que vous compreniez mieux le processus avant de continuer :
             </p>
 
-            <div className="relative aspect-video bg-muted rounded-lg overflow-hidden shadow-elegant flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <PlayCircle className="w-20 h-20 text-primary mx-auto opacity-50" />
-                <p className="text-muted-foreground">Votre vidéo ici (16:9)</p>
-              </div>
+            <div className="relative aspect-video bg-muted rounded-lg overflow-hidden shadow-elegant">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/IGFencMpVmI"
+                title="Vidéo explicative"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0"
+              />
             </div>
 
             <div className="text-center pt-6">
@@ -321,20 +328,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Navigation />
+      
       {currentStep === "intro" && <IntroSection />}
       {currentStep === "quiz" && <QuizSection />}
       {currentStep === "video" && <VideoSection />}
       {currentStep === "testimonials" && <TestimonialsSection />}
       {currentStep === "result" && <ResultSection />}
 
-      {/* Footer */}
-      <footer className="bg-foreground/5 py-8 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2024 Saveurs Européennes. Tous droits réservés.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
