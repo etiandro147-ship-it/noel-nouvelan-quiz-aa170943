@@ -27,6 +27,7 @@ export default {
 					red: "hsl(var(--christmas-red))",
 					green: "hsl(var(--christmas-green))",
 					gold: "hsl(var(--christmas-gold))",
+					white: "hsl(var(--christmas-white))",
 				},
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -73,10 +74,12 @@ export default {
 				'gradient-festive': 'var(--gradient-festive)',
 				'gradient-subtle': 'var(--gradient-subtle)',
 				'gradient-christmas': 'var(--gradient-christmas)',
+				'gradient-red-dark': 'var(--gradient-red-dark)',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',
         'card': 'var(--shadow-card)',
+        'glow': 'var(--shadow-glow)',
       },
       borderRadius: {
         lg: "var(--radius)",
