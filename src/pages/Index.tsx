@@ -305,7 +305,7 @@ const Index = () => {
 
         <div className="text-center space-y-4">
           <a
-            href="https://pay.hotmart.com/C103196835H?off=j4ozfr2h&checkoutMode=10"
+            href="https://puzzlebox63.gumroad.com/l/llfkh"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"
