@@ -197,7 +197,7 @@ const Index = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/IGFencMpVmI"
+                src="https://www.youtube.com/embed/2e42lTTWptc"
                 title="Vidéo explicative"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
